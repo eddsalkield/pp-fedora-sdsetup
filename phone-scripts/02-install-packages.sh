@@ -43,9 +43,6 @@ systemctl disable initial-setup.service
 systemctl enable lightdm
 systemctl set-default graphical.target
 
-infecho "Setting system chassis..."
-hostnamectl set-chassis handset
-
 infecho "Making COPR higher priority for kernel updates..."
 echo "priority=10" >> /etc/yum.repos.d/_copr\:copr.fedorainfracloud.org\:njha\:mobile.repo
 
